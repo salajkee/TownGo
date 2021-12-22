@@ -1,0 +1,14 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    &-footer {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}

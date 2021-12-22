@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TownGo</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav">
+                <div class="container">
+                    <ul>
+                        <li><a href="#" class="nav__link">Работа</a></li>
+                        <li><a href="#" class="nav__link">Отели</a></li>
+                        <li><a href="#" class="nav__link">Бизнес</a></li>
+                        <li><a href="#" class="nav__link">Заведения</a></li>
+                        <li><a href="#" class="nav__link">Недвижимость</a></li>
+                        <li><a href="#" class="nav__link">Афиша</a></li>
+                        <li><a href="#" class="nav__link">Новости</a></li>
+                        <li><a href="#" class="nav__link">Услуги</a></li>
+                        <li><a href="#" class="nav__link">Блоги</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__right-block">
+                        <a href="#" class="header__logo"><img src="images/icons/logo.svg" alt="logo" width="95"></a>
+                        <a href="#" class="header__cities">
+                            Калуга 
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6L8 10L12 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <a href="#" class="header__search-btn">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 7C2 4.23858 4.23858 2 7 2C9.76142 2 12 4.23858 12 7C12 9.76142 9.76142 12 7 12C4.23858 12 2 9.76142 2 7ZM7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14C8.57234 14 10.0236 13.4816 11.1922 12.6064L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L12.6064 11.1922C13.4816 10.0236 14 8.57234 14 7C14 3.13401 10.866 0 7 0Z" fill="#7D8596"/>
+                            </svg>
+                            Я ищу
+                        </a>
+                        <input class="header__search-input" name="search" type="text" placeholder="Развлекательный центры">
+                    </div>
+                    <button class="header__login-btn">
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 8C9.20914 8 11 6.20914 11 4C11 1.79086 9.20914 0 7 0C4.79086 0 3 1.79086 3 4C3 6.20914 4.79086 8 7 8ZM7 9C3.13401 9 0 13.0294 0 18H14C14 13.0294 10.866 9 7 9Z" fill="white"/>
+                        </svg>
+                        Войти                            
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#" class="breadcrumbs__link">Главная <span>/</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="breadcrumbs__link">Афиша <span>/</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="breadcrumbs__link">Спектакли <span>/</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="afisha">
+                <div class="container">
+                    <h1>Афиша в Москве</h1>
+                    <div class="tabs">
+                        <ul>
+                            <li class="tabs__item">
+                                <svg class="tabs__item-svg" width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.5859 2.92969C8.5859 3.25329 8.3236 3.51562 8 3.51562C7.6764 3.51562 7.41406 3.25329 7.41406 2.92969C7.41406 2.60608 7.6764 2.34375 8 2.34375C8.3236 2.34375 8.5859 2.60608 8.5859 2.92969Z" fill="#7D8596"/>
+                                    <path d="M5.65625 4.6875C5.97985 4.6875 6.24219 4.42518 6.24219 4.10157C6.24219 3.77797 5.97985 3.51562 5.65625 3.51562C5.33265 3.51562 5.07031 3.77797 5.07031 4.10157C5.07031 4.42518 5.33265 4.6875 5.65625 4.6875Z" fill="#7D8596"/>
+                                    <path d="M10.9297 4.10157C10.9297 4.42518 10.6674 4.6875 10.3438 4.6875C10.0201 4.6875 9.75781 4.42518 9.75781 4.10157C9.75781 3.77797 10.0201 3.51562 10.3438 3.51562C10.6674 3.51562 10.9297 3.77797 10.9297 4.10157Z" fill="#7D8596"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.60656 9.29181C0.897662 9.06521 0.382812 8.40028 0.382812 7.6172C0.382812 6.80771 0.933012 6.12466 1.67895 5.92134C1.5991 5.72067 1.55469 5.5022 1.55469 5.27345C1.55469 4.68544 1.84488 4.14911 2.31703 3.82595C2.39352 3.36314 2.5773 2.93079 2.85703 2.56044C3.20027 2.10607 3.66328 1.7697 4.20629 1.57786C4.52492 1.0981 4.96414 0.731261 5.48855 0.509425C6.01195 0.287941 6.58012 0.22798 7.14559 0.332706C7.57172 0.113878 8.0017 0.00208111 8.4268 1.0797e-05C8.9612 -0.0015517 9.4995 0.166495 9.9972 0.490519C10.4398 0.523878 10.8513 0.649034 11.2227 0.863487C11.7157 1.14814 12.1064 1.5663 12.3637 2.08165C12.879 2.33888 13.2972 2.72966 13.5818 3.22267C13.7227 3.46661 13.8255 3.73302 13.8889 4.01704C14.2453 4.34892 14.4453 4.79505 14.4453 5.27345C14.4453 5.50224 14.4009 5.72071 14.3211 5.92134C15.067 6.12466 15.6172 6.80771 15.6172 7.6172C15.6172 8.40032 15.1023 9.06521 14.3934 9.29185L13.2699 19.4783C13.2371 19.7752 12.9862 20 12.6875 20H3.3125C3.01375 20 2.76285 19.7752 2.73008 19.4783L1.60656 9.29181ZM4.51582 9.37501H2.79477L3.83738 18.8281H5.03715L4.51582 9.37501ZM9.7892 18.8281L10.3105 9.37501H8.5859V18.8281H9.7892ZM6.21074 18.8281H7.41406V9.37501H5.68945L6.21074 18.8281ZM10.9629 18.8281H12.1627L13.2053 9.37501H11.4842L10.9629 18.8281ZM3.45109 4.2222C3.43938 4.44802 3.29871 4.64692 3.08973 4.73325C2.8691 4.82439 2.72656 5.03642 2.72656 5.27345C2.72656 5.59653 2.98941 5.85939 3.3125 5.85939H12.6875C13.0106 5.85939 13.2734 5.59653 13.2734 5.27345C13.2734 5.03247 13.1101 4.88079 13.0127 4.81185C12.8813 4.7188 12.7941 4.57583 12.7713 4.41649C12.7394 4.19278 12.6706 3.98825 12.5669 3.80857C12.3742 3.47482 12.0749 3.21857 11.7014 3.06763C11.554 3.0081 11.4372 2.89126 11.3777 2.74392C11.2267 2.3704 10.9705 2.0711 10.6367 1.87841C10.3882 1.73493 10.1041 1.65935 9.7921 1.65368C9.6719 1.65153 9.5554 1.61243 9.4581 1.54177C9.1231 1.29817 8.7698 1.16978 8.4325 1.17192C8.1498 1.17329 7.84813 1.26884 7.53574 1.45599C7.39945 1.53767 7.23586 1.56048 7.08238 1.51915C6.69336 1.41446 6.30012 1.43853 5.94516 1.58872C5.59004 1.73892 5.29894 2.00439 5.10328 2.35638C5.02605 2.49532 4.8957 2.59689 4.74215 2.63786C4.35301 2.74165 4.02449 2.95915 3.79211 3.26681C3.58746 3.53778 3.46953 3.86814 3.45109 4.2222ZM13.8594 7.03126H2.14062C1.81754 7.03126 1.55469 7.29411 1.55469 7.6172C1.55469 7.94028 1.81754 8.20314 2.14062 8.20314H13.8594C14.1825 8.20314 14.4453 7.94028 14.4453 7.6172C14.4453 7.29411 14.1825 7.03126 13.8594 7.03126Z" fill="#7D8596"/>
+                                </svg>  
+                                Кино <span>16</span>                              
+                            </li>
+                            <li class="tabs__item">
+                                <svg class="tabs__item-svg" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.12109 9.287L9.36903 8.03906L10.201 8.87102L8.95305 10.119L8.12109 9.287Z" fill="#7D8596"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6533 14.3209L14.6707 13.3384C13.8361 12.5038 12.4781 12.5037 11.6433 13.3384L6.68135 18.3003C5.9915 18.9902 4.875 18.9902 4.18512 18.3003L3.274 17.3892C2.85445 16.9697 2.83994 16.3108 3.20614 15.8738C3.86057 16.1833 4.66821 16.0694 5.21042 15.5272L5.69476 15.0428C6.3568 15.3705 7.16275 15.2744 7.72841 14.7754L13.7585 9.45471C14.897 9.40497 15.9904 8.90772 16.8596 8.0385C18.6948 6.20325 18.6948 3.2171 16.8596 1.38181C15.0244 -0.453443 12.0381 -0.453443 10.2029 1.38181C9.33365 2.25115 8.83609 3.34462 8.78647 4.48316L3.46542 10.5137C2.96005 11.0864 2.87532 11.895 3.19822 12.5469L2.71415 13.031C2.17116 13.5741 2.05697 14.3856 2.37089 15.0421C1.5447 15.9439 1.5658 17.3452 2.44197 18.2214L3.35304 19.1325C4.50272 20.2822 6.36367 20.2824 7.51346 19.1325L12.4754 14.1704C12.8512 13.7946 13.4627 13.7946 13.8386 14.1704L14.8212 15.153L15.6533 14.3209ZM4.37838 14.6952C4.14895 14.9245 3.77569 14.9245 3.54626 14.6952C3.31684 14.4657 3.31684 14.0925 3.54626 13.863L3.96232 13.447L4.7944 14.2791L4.37838 14.6952ZM15.5805 7.59157C15.0323 7.99806 14.409 8.23525 13.7688 8.27608L9.96541 4.47265C10.0062 3.83254 10.2434 3.20917 10.6499 2.66089L15.5805 7.59157ZM16.0275 2.21392C17.2622 3.44856 17.3885 5.37733 16.4082 6.75506L11.4864 1.83321C12.8641 0.852941 14.7928 0.979284 16.0275 2.21392ZM4.34778 11.2922L9.39767 5.56906L12.6724 8.84374L6.94984 13.893C6.68853 14.1237 6.29071 14.1112 6.04422 13.8648L4.37602 12.1966C4.12993 11.9505 4.11749 11.5532 4.34778 11.2922Z" fill="#7D8596"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.53024 3.07091V5.8379C3.53024 6.81119 2.7384 7.60302 1.76512 7.60302C0.791832 7.60302 0 6.81119 0 5.8379C0 4.62339 1.20667 3.76723 2.35349 4.17399V1.54443L5.32744 2.32705L5.02796 3.46504L3.53024 3.07091ZM1.17675 5.8379C1.17675 6.16233 1.44069 6.42628 1.76512 6.42628C2.08955 6.42628 2.35349 6.16233 2.35349 5.8379C2.35349 5.51348 2.08955 5.24953 1.76512 5.24953C1.44069 5.24953 1.17675 5.51348 1.17675 5.8379Z" fill="#7D8596"/>
+                                </svg>
+                                Концерты <span>23</span>                                
+                            </li>
+                            <li class="tabs__item tabs__item-active">
+                                <svg class="tabs__item-svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.2 1.8H14.4V0.9C14.4 0.402944 13.9971 0 13.5 0C13.0029 0 12.6 0.402944 12.6 0.9V1.8H5.4V0.9C5.4 0.402944 4.99706 0 4.5 0C4.00294 0 3.6 0.402944 3.6 0.9V1.8H1.8C0.80595 1.8 0 2.60595 0 3.6V16.2C0 17.194 0.80595 18 1.8 18H16.2C17.194 18 18 17.194 18 16.2V3.6C18 2.60595 17.194 1.8 16.2 1.8ZM16.2 16.2H1.8V7.2H16.2V16.2ZM16.2 5.4H1.8V3.6H16.2V5.4Z" fill="#7D8596"/>
+                                    <path d="M10.8 9H9V10.8H10.8V9Z" fill="#7D8596"/>
+                                    <path d="M14.4 9H12.6V10.8H14.4V9Z" fill="#7D8596"/>
+                                    <path d="M10.8 12.6H9V14.4H10.8V12.6Z" fill="#7D8596"/>
+                                    <path d="M7.2 12.6H5.4V14.4H7.2V12.6Z" fill="#7D8596"/>
+                                </svg>
+                                События <span>158</span>                        
+                            </li>
+                            <li class="tabs__item">
+                                <svg class="tabs__item-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.625 0H19.375C19.6986 0 19.9609 0.262344 19.9609 0.585938V11.1328C19.9609 11.4564 19.6986 11.7188 19.375 11.7188H0.625C0.301406 11.7188 0.0390625 11.4564 0.0390625 11.1328V0.585938C0.0390625 0.262344 0.301406 0 0.625 0ZM17.6716 6.25H18.7891V1.17188H16.0547V2.12066C16.0547 3.66582 16.6273 5.12277 17.6716 6.25ZM4.91453 9.375C5.01746 9.75453 5.08238 10.1468 5.10637 10.5469H14.8936C14.9176 10.1468 14.9825 9.75453 15.0854 9.375H4.91453ZM4.45391 8.20312H15.5461C15.7146 7.88316 15.9132 7.57859 16.1406 7.29379C13.2601 6.71047 11.0704 4.20031 10.9798 1.17188H9.0202C8.92961 4.20031 6.73992 6.71047 3.85941 7.29379C4.08684 7.57859 4.28547 7.88316 4.45391 8.20312ZM14.8828 2.12066V1.17188H12.152C12.2378 3.5198 13.8662 5.48039 16.0513 6.06902C15.8117 5.69977 15.6055 5.30848 15.435 4.89676C15.0686 4.01219 14.8828 3.07816 14.8828 2.12066ZM4.565 4.8968C4.39445 5.30848 4.18824 5.69977 3.94875 6.06906C6.13383 5.48039 7.76219 3.5198 7.84801 1.17188H5.11719V2.12066C5.11719 3.07816 4.93141 4.01219 4.565 4.8968ZM3.94531 1.17188H1.21094V6.25H2.3284C3.37266 5.12277 3.94531 3.66582 3.94531 2.12066V1.17188ZM1.21094 7.42188V10.5469H3.93207C3.84102 9.33762 3.28352 8.22238 2.36578 7.42188H1.21094ZM16.0679 10.5469H18.7891V7.42188H17.6342C16.7165 8.22238 16.159 9.33762 16.0679 10.5469Z" fill="#7D8596"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.625 12.9688C16.9664 12.9688 18.0598 14.0477 18.0848 15.3833C19.1603 15.6465 19.9609 16.618 19.9609 17.7733V19.4141C19.9609 19.7377 19.6986 20 19.375 20H0.625C0.301406 20 0.0390625 19.7377 0.0390625 19.4141V17.7733C0.0390625 16.618 0.839726 15.6465 1.91523 15.3833C1.94016 14.0477 3.03359 12.9688 4.375 12.9688C5.12555 12.9688 5.79824 13.3069 6.25 13.8384C6.70176 13.3069 7.37445 12.9688 8.125 12.9688C8.87555 12.9688 9.54824 13.3069 10 13.8384C10.4518 13.3069 11.1245 12.9688 11.875 12.9688C12.6255 12.9688 13.2982 13.3069 13.75 13.8384C14.2018 13.3069 14.8745 12.9688 15.625 12.9688ZM1.21094 17.7733V18.8281H3.78906V17.7733C3.78906 17.0627 3.21078 16.4844 2.5 16.4844C1.78922 16.4844 1.21094 17.0627 1.21094 17.7733ZM3.08711 15.3837C3.59719 15.5091 4.04504 15.7939 4.375 16.1821C4.70496 15.7939 5.15281 15.5091 5.66289 15.3837C5.63863 14.6941 5.07039 14.1406 4.375 14.1406C3.67961 14.1406 3.11137 14.6941 3.08711 15.3837ZM4.96094 17.7733V18.8281H7.53906V17.7733C7.53906 17.0627 6.96078 16.4844 6.25 16.4844C5.53922 16.4844 4.96094 17.0627 4.96094 17.7733ZM6.83711 15.3837C7.34719 15.5091 7.79504 15.7939 8.125 16.1821C8.45496 15.7939 8.90281 15.5091 9.41289 15.3837C9.38863 14.6941 8.82039 14.1406 8.125 14.1406C7.42961 14.1406 6.86137 14.6941 6.83711 15.3837ZM8.71094 18.8281H11.2891V17.7733C11.2891 17.0627 10.7108 16.4844 10 16.4844C9.28922 16.4844 8.71094 17.0627 8.71094 17.7733V18.8281ZM10.5871 15.3837C11.0972 15.5091 11.545 15.7939 11.875 16.1821C12.205 15.7939 12.6528 15.5091 13.1629 15.3837C13.1386 14.6941 12.5704 14.1406 11.875 14.1406C11.1796 14.1406 10.6114 14.6941 10.5871 15.3837ZM12.4609 17.7733V18.8281H15.0391V17.7733C15.0391 17.0627 14.4608 16.4844 13.75 16.4844C13.0392 16.4844 12.4609 17.0627 12.4609 17.7733ZM14.3371 15.3837C14.8472 15.5091 15.295 15.7939 15.625 16.1821C15.955 15.7939 16.4028 15.5091 16.9129 15.3837C16.8886 14.6941 16.3204 14.1406 15.625 14.1406C14.9296 14.1406 14.3614 14.6941 14.3371 15.3837ZM16.2109 17.7733V18.8281H18.7891V17.7733C18.7891 17.0627 18.2108 16.4844 17.5 16.4844C16.7892 16.4844 16.2109 17.0627 16.2109 17.7733Z" fill="#7D8596"/>
+                                </svg>
+                                Спектаки <span>18</span>                                
+                            </li>
+                            <li class="tabs__item">
+                                <svg class="tabs__item-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.0711 2.92891C15.1823 1.0402 12.6711 0 10 0C7.32891 0 4.8177 1.0402 2.92891 2.92891C1.0402 4.8177 0 7.32891 0 10C0 12.6711 1.0402 15.1823 2.92891 17.0711C4.8177 18.9598 7.32891 20 10 20C11.8286 20 13.6178 19.5017 15.1743 18.5589C15.5433 18.3353 15.6613 17.8549 15.4377 17.4859C15.2141 17.1168 14.7338 16.9989 14.3647 17.2224C13.275 17.8825 12.0493 18.2839 10.7812 18.4012V10.7812H13.5884C13.6711 11.8574 13.925 12.9029 14.3469 13.8986C14.4731 14.1964 14.7623 14.3752 15.0666 14.3752C15.1682 14.3752 15.2716 14.3552 15.3711 14.3131C15.7684 14.1447 15.9539 13.6862 15.7856 13.2889C15.4459 12.4872 15.2357 11.6466 15.1567 10.7812H18.4009C18.2708 12.1678 17.7955 13.5032 17.0068 14.683C16.767 15.0417 16.8634 15.5269 17.222 15.7667C17.5808 16.0066 18.0659 15.9101 18.3057 15.5514C19.4141 13.8935 20 11.9739 20 10C20 7.32891 18.9598 4.8177 17.0711 2.92891ZM1.59902 10.7812H4.84266C4.69992 12.3145 4.13992 13.7829 3.22316 15.0207C2.32652 13.8136 1.74461 12.3597 1.59902 10.7812ZM9.21875 18.401C7.32465 18.2263 5.61004 17.423 4.28582 16.2021C5.51676 14.6461 6.25559 12.7559 6.41055 10.7813H9.21875V18.401ZM9.21875 9.21875H6.41148C6.32996 8.15805 6.08207 7.1268 5.67094 6.14383C5.50441 5.74582 5.04691 5.55797 4.64871 5.72457C4.25066 5.89105 4.06297 6.34875 4.22945 6.74676C4.56031 7.53773 4.76551 8.36637 4.84332 9.21871H1.59902C1.97082 5.18855 5.18859 1.97082 9.21875 1.59898V9.21875ZM13.5894 9.21871H10.7812V1.59898C12.6752 1.77371 14.3898 2.57684 15.7139 3.7977C14.4821 5.35457 13.7441 7.24223 13.5894 9.21871ZM15.1572 9.21875C15.2996 7.68414 15.8598 6.21781 16.7771 4.97957C17.6736 6.18664 18.2554 7.64043 18.401 9.21875H15.1572Z" fill="#7D8596"/>
+                                </svg>
+                                Спорт <span>48</span>                                
+                            </li>
+                        </ul>
+                        <a href="#" class="afisha__last">
+                            Последние
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="#7D8596" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </a>
+                    </div>
+
+                    <div id="kino" class="afisha__catalog">
+                        <div class="afisha__item">
+                            <img src="images/afisha-1.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                    </div>
+
+                    <div id="consert" class="afisha__catalog">
+                        <div class="afisha__item">
+                            <img src="images/afisha-1.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-1.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                <!-- Иисус Христос — суперзвезда -->
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                    </div>
+
+                    <div id="sobitiya" class="afisha__catalog">
+                        <div class="afisha__item">
+                            <img src="images/afisha-1.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-2.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-3.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-4.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-5.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-6.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-7.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-8.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-9.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-10.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-11.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-12.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-13.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-14.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                        <div class="afisha__item">
+                            <img src="images/afisha-15.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                    </div>
+
+                    <div id="spektakl" class="afisha__catalog">
+                        <div class="afisha__item">
+                            <img src="images/afisha-1.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                    </div>
+
+                    <div id="sport" class="afisha__catalog">
+                        <div class="afisha__item">
+                            <img src="images/afisha-1.jpg" alt="" class="afisha__item-img">
+                            <div class="afisha__item-block">
+                                <div class="afisha__item-block-rating">9.2</div>
+                                <div class="afisha__item-block-agelimit">16+</div>
+                                <button class="afisha__item-block-favorite">
+                                    <svg class="afisha__favorite-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.999 20C15.6916 18.4228 18.364 15.7303 19.8056 13.0039C21.2249 10.2889 21.4245 7.58507 20.1604 5.96279C19.0182 4.5095 17.5323 3.95747 16.0243 4.00253C14.5162 4.0476 13.0524 4.71228 11.999 5.64734C10.9456 4.71228 9.48183 4.0476 7.97375 4.00253C6.46566 3.95747 4.97976 4.5095 3.83761 5.96279C2.57348 7.58507 2.77308 10.2889 4.21463 13.0039C5.634 15.7303 8.30642 18.4228 11.999 20Z" fill="#7D8596"/>
+                                    </svg>                                                                              
+                                </button>
+                            </div>
+                            <div class="afisha__item-genres">
+                                <a href="#" class="afisha__item-genres-link">Комедия,</a>
+                                <a href="#" class="afisha__item-genres-link">DramaPlays</a>
+                            </div>
+                            <div class="afisha__item-title">
+                                Иисус Христос — суперзвезда
+                            </div>
+                            <a href="#" class="afisha__item-shedule">Расписание и билеты</a>
+                        </div>
+                    </div>
+
+                    <button class="afisha__showmore-btn">
+                        Показать больше
+                        <svg class="afisha__showmore-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6L8 10L12 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="footer__wrapper">
+                    <div class="footer__right">
+                        <div class="footer__right-top">
+                            <div class="footer__right-block">
+                                <a href="#" class="footer__logo"><img src="images/icons/logo.svg" alt=""></a>
+                                <p class="footer__right-text">
+                                    © 2018-2022 TownGO <br> Все права защищены.
+                                </p>
+                            </div>
+                            <nav class="footer__nav">
+                                <ul>
+                                    <li><a href="#" class="footer__nav-link">Работа</a></li>
+                                    <li><a href="#" class="footer__nav-link">Отели</a></li>
+                                    <li><a href="#" class="footer__nav-link">Афиша</a></li>
+                                    <li><a href="#" class="footer__nav-link">Бизнес</a></li>
+                                    <li><a href="#" class="footer__nav-link">Заведения</a></li>
+                                    <li><a href="#" class="footer__nav-link">Недвижимость</a></li>
+                                    <li><a href="#" class="footer__nav-link">Услуги</a></li>
+                                    <li><a href="#" class="footer__nav-link">Новости</a></li>
+                                    <li><a href="#" class="footer__nav-link">Блог</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__right-bottom">
+                            <ul>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                                <li><a href="#">Пользовательское соглашение</a></li>
+                                <li><a href="#">Оферта оказания услуг</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__left">
+                        <div class="footer__left-top">
+                            <div class="footer__left-block">
+                                <input id="upload-file" type="file" hidden="hidden">
+                                <button id="upload-btn" class="footer__upload-btn">
+                                    <label for="upload-file">
+                                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="18.5" cy="18.5" r="18.5" fill="#F5F6F8"/>
+                                            <path d="M18.448 23.472C18.3413 23.472 18.2507 23.4347 18.176 23.36C18.1013 23.2853 18.064 23.1947 18.064 23.088V19.968H14.992C14.8853 19.968 14.7947 19.9307 14.72 19.856C14.6453 19.7813 14.608 19.6853 14.608 19.568V18.736C14.608 18.6187 14.6453 18.528 14.72 18.464C14.7947 18.3893 14.8853 18.352 14.992 18.352H18.064V15.312C18.064 15.1947 18.1013 15.104 18.176 15.04C18.2507 14.9653 18.3413 14.928 18.448 14.928H19.376C19.4933 14.928 19.584 14.9653 19.648 15.04C19.7227 15.104 19.76 15.1947 19.76 15.312V18.352H22.832C22.9493 18.352 23.04 18.3893 23.104 18.464C23.1787 18.528 23.216 18.6187 23.216 18.736V19.568C23.216 19.6853 23.1787 19.7813 23.104 19.856C23.0293 19.9307 22.9387 19.968 22.832 19.968H19.76V23.088C19.76 23.1947 19.7227 23.2853 19.648 23.36C19.584 23.4347 19.4933 23.472 19.376 23.472H18.448Z" fill="#2A3643"/>
+                                        </svg>                                    
+                                        Добавить публикацию
+                                    </label>
+                                </button>
+                                <a href="#" class="footer__left-promo">Рекламные услуги</a>
+                            </div>
+                            <div class="footer__left-contacts">
+                                <div class="footer__left-contacts-email">
+                                    <i class="far fa-envelope"></i>
+                                    <a href="mailto:support_team@towngo.ru">support_team@towngo.ru</a>
+                                </div>
+                                <div class="footer__left-contacts-number">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.7964 9.84578C12.878 9.84578 11.9763 9.70215 11.1218 9.41977C10.7031 9.27695 10.1884 9.40797 9.93285 9.67043L8.24625 10.9436C6.29027 9.89953 5.08543 8.69508 4.05559 6.75379L5.29133 5.11113C5.61238 4.79051 5.72754 4.32215 5.58957 3.8827C5.30598 3.02371 5.16191 2.12242 5.16191 1.20367C5.16195 0.539961 4.62199 0 3.95832 0H1.20363C0.539961 0 0 0.539961 0 1.20363C0 8.81105 6.18898 15 13.7964 15C14.4601 15 15 14.46 15 13.7964V11.0494C15 10.3857 14.46 9.84578 13.7964 9.84578Z" fill="#2A3643"/>
+                                    </svg>                                    
+                                    <a href="tel:79158958994">7 (915) 895 89 94</a>
+                                </div>
+                                <div class="footer__left-contacts-social">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-vk"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__left-bottom">
+                            <p>
+                                Зарегистрированный товарный знак N823990.
+                                <br> в Государственном реестре
+                                <br> товарных знаков Российской федерации <br> ИП римша Станислав Алексадрович ОГРНИП 318402700031412,
+                                <br> ИНН 400101738589
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
